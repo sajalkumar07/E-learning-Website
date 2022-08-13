@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+   
+}
+
+/*main header*/
+
+.main
+{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(43, 43, 43, 0.6),rgba(0, 0, 0, 0.459)),url(phutos/elearn.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+        
+}
+
+/*nav header*/
+
+nav{
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+nav img{
+    width: 150px;
+}
+ul{
+    flex:1;
+    text-align: right;
+    position: -webkit-sticky;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: .3s;
+    z-index: 1;
+}
+ul li a:hover{
+    color: rgb(226, 147, 147);
+    transition: .3s ease-in;
+}
+
+ul li a:hover::after{
+    background-color: red;
+    width: 100%;
+}
+
+/*main heading*/
+
+.title{
+    color: rgb(255, 255, 255);
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.title h1{
+    font-size: 62px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*main header button*/
+
+.push{
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    border-radius: .5mm;
+    color: rgba(255, 255, 255, 0.993);
+    padding: 10px 50px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: .6s ease-in-out;
+    
+}
+.push:hover{
+    background: rgb(255, 0, 0);
+    color: white;   
+    
+}
+
+
+/*second main courses coloum*/
+
+#course {
+    width: 84%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+    
+}
+    
+/*second main courses coloum heading*/
+
+#course h1{
+    margin-top: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*second main courses paragraph coloum*/
+
+p
+{
+    
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/*second main courses card*/
+
+.row 
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.course-col{
+    flex-basis: 17%;
+    background: #b1b1b16e;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .6s ease-in-out;
+    cursor: pointer;
+
+}
+h3{
+   
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/*second main courses card button*/
+
+.startbtn a{
+    background-color: #000000;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 70px ;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 60px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: .6s ease
+}
+
+.startbtn a:hover{
+
+    color: red;
+}
+
+/*third main campus*/
+
+.campus{
+    width: 84%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 100%;
+}
+
+.campus h1{
+    margin-top: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.layer{
+    background:  transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+.layer:hover{
+    background: rgba(255, 0, 0, 0.349);
+
+
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .6s;
+}
+.layer:hover h3{
+    bottom: 43%;
+    opacity: 1;
+
+}
+
+/*fourth main comunity suuport section*/
+
+.support{
+    width: 80%;             
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.support h1{
+    margin-top: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    flex-basis: 15%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 12px 25px;
+    cursor: pointer;
+    height: 250px;
+    width: 200px;
+    transition: .6s ease-in-out;
+    
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.card:hover {
+    box-shadow: 10px 40px 50px 0 rgba(0, 0, 0, 0.253);
+    
+}
+
+/*fifth main contact section*/
+
+.contact{
+    margin: 100px auto;
+    width: 80%;
+    height: 30%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(phutos/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 110px 0;
+
+}
+
+.contact h1{
+    color: white;
+    margin-bottom: 41px;
+    padding: 0;
+}
+
+/*fifth main contact section button*/
+
+.pushbtn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    border-radius: .5mm;
+    color: rgba(255, 255, 255, 0.466);
+    padding: 10px 60px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: .6s ease-in-out;
+}
+.pushbtn:hover{
+    background: rgba(211, 54, 54, 0.788);
+    color: white;   
+    
+}
+
+/*footer section*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+    
+}
+
+.icons .fa{
+    color: rgb(139, 139, 139);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.h5{
+
+   text-align: center;
+   margin-top: 10%;
+
+}
+
+/*footer section socal media icon*/
+
+.icons .fb i:hover{
+    color: rgb(0, 26, 255);
+}
+
+.icons .twt i:hover{
+    color: rgb(16, 173, 247);
+}
+
+.icons .inst i:hover{
+    color: rgb(234, 0, 255);
+}
+
+.icons .yt i:hover{
+    color: red;
+}
+.icons .lkd i:hover{
+
+    color: rgb(41, 41, 175);
+}
+
+/*---sub-main-about us page---*/
+
+.submain{
+    background-image:linear-gradient(rgba(43, 43, 43, 0.6),rgba(0, 0, 0, 0.459)),url(phutos/proabout.jpg);
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.submain h1{
+
+    margin-top: 10%;
+
+}
+.submain-about
+{
+    width: 84%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-title{
+    margin-left: 10px;
+    margin-bottom: 35px;
+    font-size:30px;
+    font-weight: 600;
+}
+
+.aboutcol{
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+
+.aboutcol img
+{
+    width: 100%;
+}
+
+
+.btn
+{
+    margin-top: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    border-radius: .5mm;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: .6s ease-in-out
+    
+}
+.btn:hover
+{
+    background: rgb(247, 2, 2);
+    color: white;   
+    
+}
+
+/*sub-main-courses section */
+
+
+.course-class{
+
+    background-color: rgba(255, 255, 255, 0.363);
+}
+.submain-courese{
+
+   background-color: black;
+   
+}
+
+
+.course-main{
+    width: 84%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course-main h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+}
+
+.row 
+{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main-course{
+    color: rgb(0, 0, 0);
+    flex-basis: 17%;
+    background: #b1b1b16e;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .6s ease-in-out;
+    cursor: pointer;
+
+}
+h3{
+   
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.pageno{
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin: 3rem auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.pageno li{
+    width: 100%;
+}
+
+/*contact section*/
+
+.submain-contact{
+    background-image:linear-gradient(rgba(43, 43, 43, 0.6),rgba(0, 0, 0, 0.459)),url(phutos/contactus.jpg);
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.submain-contact h1{
+
+    margin-top: 10%;
+
+}
+
+.contact-section{
+    width: 84%;
+    margin: 100px auto;
+}
+.contact-info{
+    flex-basis: 50%;
+    margin-bottom: 30px;
+    
+}
+.contact-info div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.contact-info div .fas{
+    color: red;
+    font-size: 20px;
+    margin: 10px;
+    margin-right: 20px;
+
+}
+.contact-info div p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 200;
+   
+}
+.contact-info input, .contact-info textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    
+    
+}
+
+
+.send-btn
+{
+
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    border-radius: .5mm;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: .6s ease-in-out
+    
+}
+.send-btn:hover{
+    background: red;
+    color: white;
+}
